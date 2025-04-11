@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint:fix": "eslint --fix",
-    "build": "esbuild ./src/main.ts --bundle --outfile=dist/main.js",
+    "build": "node esbuild.js",
     "clasp:push": "clasp push dist",
-    "clasp:oepn": "clasp open",
+    "clasp:open": "clasp open",
     "bpo": "pnpm build && pnpm clasp:push && pnpm clasp:open"
   },
   "keywords": [],
@@ -21,7 +21,6 @@
     "@stylistic/eslint-plugin": "^4.2.0",
     "@tsconfig/node22": "^22.0.1",
     "esbuild": "^0.25.2",
-    "esbuild-gas-plugin": "^0.9.0",
     "eslint": "^9.24.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.29.1"

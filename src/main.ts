@@ -1,3 +1,6 @@
 import { consoleLog } from './module.js'
 
-(global as any).consoleLog = consoleLog
+// @ts-expect-error: global is not defined
+global.main = () => {
+  consoleLog('Hello from main.ts')
+}
