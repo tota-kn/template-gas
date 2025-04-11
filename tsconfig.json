@@ -1,0 +1,13 @@
+{
+    // https://github.com/tsconfig/bases/blob/main/bases/node22.json
+    "extends": "@tsconfig/node22/tsconfig.json",
+
+    "compilerOptions": {
+        "lib": [
+            "ES2023",
+            "DOM"
+        ],
+        "rootDir": "./src",
+        "outDir": "./dist",
+    },
+}
